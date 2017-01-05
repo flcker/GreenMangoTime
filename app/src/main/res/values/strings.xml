@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">GreenMangoTime</string>
+    <string name="app_name">青芒时间</string>
+    <string name="edit_message">输入一条信息</string>
+    <string name="send_button">发送</string>
+
+    <!--message activity-->
+    <string name="message_activity">Message Activity</string>
+
+
 </resources>
