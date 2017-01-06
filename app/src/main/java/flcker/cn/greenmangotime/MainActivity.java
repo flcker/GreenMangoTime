@@ -53,15 +53,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendMessage(View view) {
         EditText editText = (EditText) findViewById(R.id.edit_message);
-//        String message = editText.getText().toString();
-        Log.i(TAG, "sendMessage 1");
+//        String message = editText.getText().toString();;
 
         double latitude = LocationService.getInstance().getLatitude();
         double longitude = LocationService.getInstance().getLongitude();
-        Log.i(TAG, "sendMessage 2");
+
         String message = "latitude " + latitude + "\n longitude " + longitude;
         editText.setText("");
-        Log.i(TAG, "sendMessage 3");
 //        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent( this, MessageActivity.class);
